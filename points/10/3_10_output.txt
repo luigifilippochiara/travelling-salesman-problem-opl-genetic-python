@@ -1,0 +1,122 @@
+Default LOCALE: LC_CTYPE=en_US.UTF-8;LC_NUMERIC=it_IT.UTF-8;LC_TIME=en_US.UTF-8;LC_COLLATE=en_US.UTF-8;LC_MONETARY=it_IT.UTF-8;LC_MESSAGES=en_US.UTF-8;LC_PAPER=it_IT.UTF-8;LC_NAME=it_IT.UTF-8;LC_ADDRESS=it_IT.UTF-8;LC_TELEPHONE=it_IT.UTF-8;LC_MEASUREMENT=it_IT.UTF-8;LC_IDENTIFICATION=it_IT.UTF-8
+
+<<< setup, at 0s, took 1,54878e+09s
+
+
+<<< generate, at 0s, took 0,00409794s
+
+CPXPARAM_TimeLimit                               10
+Tried aggregator 2 times.
+MIP Presolve eliminated 9 rows and 9 columns.
+Aggregator did 10 substitutions.
+Reduced MIP has 111 rows, 181 columns, and 614 nonzeros.
+Reduced MIP has 90 binaries, 91 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,61 ticks)
+Found incumbent of value 88,385439 after 0,00 sec. (1,23 ticks)
+Probing fixed 7 vars, tightened 0 bounds.
+Probing time = 0,00 sec. (0,36 ticks)
+Cover probing fixed 0 vars, tightened 63 bounds.
+Tried aggregator 1 time.
+MIP Presolve eliminated 10 rows and 16 columns.
+MIP Presolve modified 112 coefficients.
+Reduced MIP has 101 rows, 165 columns, and 565 nonzeros.
+Reduced MIP has 83 binaries, 82 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,67 ticks)
+Probing time = 0,00 sec. (0,30 ticks)
+Clique table members: 19.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0,00 sec. (0,67 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           88,3854        0,0000           100,00%
+      0     0       24,1865    29       88,3854       24,1865      116   72,64%
+      0     0       26,8182    37       88,3854      Cuts: 53      169   69,66%
+      0     0       28,5959    35       88,3854      Cuts: 35      205   67,65%
+      0     0       36,3999    42       88,3854      Cuts: 17      258   58,82%
+      0     0       39,3950    39       88,3854      Cuts: 13      276   55,43%
+      0     0       41,1264    42       88,3854      Cuts: 24      317   53,47%
+      0     0       41,2631    41       88,3854      Cuts: 17      348   53,31%
+      0     0       41,5252    43       88,3854      Cuts: 31      365   53,02%
+      0     0       41,7457    35       88,3854      Cuts: 21      377   52,77%
+      0     0       41,7696    37       88,3854   Flowcuts: 2      384   52,74%
+      0     0       41,7961    40       88,3854      Cuts: 17      415   52,71%
+      0     0       41,7961    45       88,3854      Cuts: 15      440   52,71%
+      0     0       41,7961    36       88,3854       Cuts: 4      441   52,71%
+*     0+    0                           41,9790       41,7961             0,44%
+      0     0        cutoff             41,9790       41,9790      441    0,00%
+Elapsed time = 0,17 sec. (68,73 ticks, tree = 0,01 MB, solutions = 2)
+
+Cover cuts applied:  4
+Implied bound cuts applied:  8
+Flow cuts applied:  21
+Mixed integer rounding cuts applied:  2
+Zero-half cuts applied:  3
+Gomory fractional cuts applied:  1
+
+Root node processing (before b&c):
+  Real time             =    0,17 sec. (68,74 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0,00 sec. (0,00 ticks)
+  Sync time (average)   =    0,00 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    0,17 sec. (68,74 ticks)
+
+<<< solve, at 0,62s, took 0,166609s
+
+
+OBJECTIVE: 41.97903
+01/29/2019 18:42:31 850
+solving time ~= 168.308105469
+Done
+ [[0 0 3 0 0 0 0 0 0 0]
+         [4 0 0 0 0 0 0 0 0 0]
+         [0 0 0 2 0 0 0 0 0 0]
+         [0 0 0 0 0 1 0 0 0 0]
+         [0 5 0 0 0 0 0 0 0 0]
+         [0 0 0 0 0 0 0 10 0 0]
+         [0 0 0 0 0 0 0 0 0 8]
+         [0 0 0 0 0 0 9 0 0 0]
+         [0 0 0 0 6 0 0 0 0 0]
+         [0 0 0 0 0 0 0 0 7 0]]
+
+<<< post process, at 0,62s, took 0,000515938s
+
+// solution (optimal) with objective 41.9790320286235
+// Quality Incumbent solution:
+// MILP objective                                 4,1979032029e+01
+// MILP solution norm |x| (Total, Max)            6,50000e+01  1,00000e+01
+// MILP solution error (Ax=b) (Total, Max)        0,00000e+00  0,00000e+00
+// MILP x bound error (Total, Max)                0,00000e+00  0,00000e+00
+// MILP x integrality error (Total, Max)          1,59872e-14  1,77636e-15
+// MILP slack bound error (Total, Max)            1,77636e-15  1,77636e-15
+// 
+
+y = [[0
+             0 1 0 0 0 0 0 0 0]
+             [1 0 0 0 0 0 0 0 0 0]
+             [0 0 0 1 0 0 0 0 0 0]
+             [0 0 0 0 0 1 0 0 0 0]
+             [0 1 0 0 0 0 0 0 0 0]
+             [0 0 0 0 0 0 0 1 0 0]
+             [0 0 0 0 0 0 0 0 0 1]
+             [0 0 0 0 0 0 1 0 0 0]
+             [0 0 0 0 1 0 0 0 0 0]
+             [0 0 0 0 0 0 0 0 1 0]];
+x = [[0 0 3 0 0 0 0 0 0 0]
+             [4 0 0 0 0 0 0 0 0 0]
+             [0 0 0 2 0 0 0 0 0 0]
+             [0 0 0 0 0 1 0 0 0 0]
+             [0 5 0 0 0 0 0 0 0 0]
+             [0 0 0 0 0 0 0 10 0 0]
+             [0 0 0 0 0 0 0 0 0 8]
+             [0 0 0 0 0 0 9 0 0 0]
+             [0 0 0 0 6 0 0 0 0 0]
+             [0 0 0 0 0 0 0 0 7 0]];
+
+<<< done, at 0,62s, took 0,000285864s
+
